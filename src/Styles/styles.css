@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Zilla+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+
+:root {
+  --base-color: #344e41;
+  --sub-base-color: #588157;
+  --sub-color: #a3b18a;
+  --text-color: #dad7cd;
+  --base-p-fs: calc(1rem + 1vw);
+  --base-header-fs: calc(1.1rem + 1.2vw);
+  --app-h2-fs: calc(0.6rem + 0.6vw);
+  --logo-width: max(35px, 30%);
+  --base-header-ff: "Gloock", sans-serif;
+  --base-paragraph-ff: "Nanum Myeongjo", sans-serif;
+  --base-margin: 0.2em 0.6em;
+  --base-padding: 0.4em 0.6em;
+  --box-shadow: 5px 10px 30px black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+#hero-section {
+  background: url(/src/Assets/hero-img.jpg) no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+.menu-div {
+  width: 5%;
+  height: 6%;
+}
+
+.menu-btn {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: var(--base-color);
+  border: none;
+  border-radius: 0.5em;
+  margin: 0.4em 0.4em;
+}
+.drawer-container {
+  background-color: orange;
+  width: 30%;
+  height: 35%;
+  position: absolute;
+  top: 0;
+  border-radius: 0.5em;
+}
+
+.close-drawer {
+  border: 1px solid blue;
+}
+
+.nav-links-container {
+  /* border: 1px solid yellow; */
+  margin-top: 4em;
+  height: 75%;
+  display: grid;
+  align-items: center;
+}
+
+.nav-links-container a {
+  text-decoration: none;
+  font-family: var(--base-paragraph-ff);
+  font-size: calc(0.8rem + 0.7vw);
+  color: var(--base-color);
+}
+
+.hero-content {
+  width: 40%;
+  height: 20%;
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  justify-items: center;
+  box-shadow: var(--box-shadow);
+  background-color: var(--base-color);
+  border-radius: 0.5em;
+}
+
+.hero-h1 {
+  color: var(--text-color);
+  font-family: var(--base-header-ff);
+  letter-spacing: 0.2rem;
+}
+
+.hero-p {
+  max-width: 50ch;
+  text-align: center;
+  color: white;
+  font-family: var(--base-paragraph-ff);
+}
+
+.join-us-btn {
+  background-color: orange;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.4em 2em;
+  height: 70%;
+  cursor: pointer;
+  color: var(--base-color);
+}
