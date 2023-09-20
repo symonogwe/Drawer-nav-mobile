@@ -46,20 +46,36 @@ body {
   border-radius: 0.5em;
   margin: 0.4em 0.4em;
 }
+
+.menu-btn:hover {
+  scale: 0.95;
+}
+
 .drawer-container {
   background-color: orange;
-  width: 30%;
+  width: 20%;
   height: 30%;
   position: absolute;
   top: 0;
   border-radius: 0.5em;
+  left: -20%;
+  transition: transform 100ms ease-in-out;
+}
+
+/* Javascript Dom styling */
+.visible-drawer {
+  transform: translateX(100%);
 }
 
 .close-drawer {
   border: none;
-  background-color: red;
+  background-color: var(--base-color);
   margin: var(--base-margin);
   cursor: pointer;
+}
+
+.close-drawer:hover {
+  background-color: red;
 }
 
 .nav-links-container {
@@ -75,6 +91,13 @@ body {
   font-size: calc(0.8rem + 0.7vw);
   color: var(--base-color);
   margin: var(--base-margin);
+  width: 60%;
+}
+
+.nav-links-container a:hover {
+  scale: 0.9;
+  color: brown;
+  font-weight: 500;
 }
 
 .nav-links-container li {
